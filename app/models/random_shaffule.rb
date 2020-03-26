@@ -1,0 +1,2 @@
+class RandomShaffule < ApplicationRecord
+end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Random Shaffules</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Answer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @random_shaffules.each do |random_shaffule| %>
+      <tr>
+        <td><%= random_shaffule.question %></td>
+        <td><%= random_shaffule.answer %></td>
+        <td><%= link_to 'Show', random_shaffule %></td>
+        <td><%= link_to 'Edit', edit_random_shaffule_path(random_shaffule) %></td>
+        <td><%= link_to 'Destroy', random_shaffule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Random Shaffule', new_random_shaffule_path %>

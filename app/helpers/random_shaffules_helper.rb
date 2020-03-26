@@ -1,0 +1,2 @@
+module RandomShaffulesHelper
+end

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @random_shaffule.question %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @random_shaffule.answer %>
+</p>
+
+<%= link_to 'Edit', edit_random_shaffule_path(@random_shaffule) %> |
+<%= link_to 'Back', random_shaffules_path %>
